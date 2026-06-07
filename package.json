@@ -18,7 +18,7 @@
     "url": "https://github.com/Salvadorito2003/wdd330-goalsandplans/issues"
   },
   "homepage": "https://github.com/Salvadorito2003/wdd330-goalsandplans#readme",
-  "dependencies": {
+  "devDependencies": {
     "vite": "^8.0.16"
   }
 }
