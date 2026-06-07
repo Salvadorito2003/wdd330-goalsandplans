@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <!-- Outer circle clipped quadrants -->
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="400" cy="400" r="350"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#circleClip)">
+    <!-- muted blue -->
+    <rect x="50" y="50" width="350" height="350" fill="#6E8FC9"/>
+    <!-- muted green -->
+    <rect x="400" y="50" width="350" height="350" fill="#82AF76"/>
+    <!-- muted red -->
+    <rect x="50" y="400" width="350" height="350" fill="#D96A6A"/>
+    <!-- muted orange -->
+    <rect x="400" y="400" width="350" height="350" fill="#E7A05A"/>
+  </g>
+
+  <!-- large white center circle -->
+  <circle cx="400" cy="400" r="130" fill="rgb(162, 162, 162)"/>
+</svg>

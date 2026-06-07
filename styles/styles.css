@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+header {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+@media screen and (min-width: 1000px) {
+    body {
+        max-width: 75%;
+        margin: 0 auto;
+        background-color: rgb(162, 162, 162);
+    }
+    header ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+    header ul li {
+        list-style: none;
+        font-size: 30px;
+        text-align: center;
+        
+    }
+    header ul li a {
+        border: 1px solid white;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        border-radius: 10px;
+    }
+    header ul li a:hover {
+        background-color: white;
+    }
+
+
+    .hero img {
+        width: 75%;
+        height: 250px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+}
