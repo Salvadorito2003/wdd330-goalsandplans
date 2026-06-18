@@ -10,6 +10,7 @@ header {
         max-width: 75%;
         margin: 0 auto;
         background-color: rgb(162, 162, 162);
+        
     }
     header ul {
         display: flex;
@@ -43,5 +44,29 @@ header {
         margin: 0 auto;
         display: block;
     }
-    
-}
+    .goals-and-tasks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #connect-google {
+        grid-column: 1/3;
+        padding: 10px;
+        margin: 10px;
+    }
+    #new-goals {
+        grid-column: 1/2;
+        max-width: 90%;
+    }
+    #all-tasks {
+        grid-column: 2/3;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    }
+    [type = "text"], [type = "date"] {
+        width: 90%;
+        height: 30px;
+    }

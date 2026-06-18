@@ -1,4 +1,5 @@
 import { loadHeaderFooter } from "./utils.mjs";
+import { displayGoals } from "./GoalsAndPlans.js";
 
 loadHeaderFooter();
 
@@ -70,7 +71,13 @@ saveButton.addEventListener("click", async () => {
         reminderDate,
         tasks
     };
+    const goals = JSON.parse(localStorage.getItem("goals")) || [];
+
+    goals.push(goal);
+
+    localStorage.setItem("goals", JSON.stringify(goals));
 
     console.log(goal);
     await createCalendarEvent(goal);
 });
+await displayGoals();
