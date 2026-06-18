@@ -65,8 +65,12 @@ header {
         margin-bottom: 10px;
         margin-top: 10px;
     }
-    }
-    [type = "text"], [type = "date"] {
+    
+    [type = "text"], [type = "date" ]{
         width: 90%;
         height: 30px;
     }
+    .hidden {
+        display: none;
+    }
+}

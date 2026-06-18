@@ -36,11 +36,15 @@ addTaskButton.addEventListener("click", () => {
   tasksDiv.appendChild(taskContainer);
 })
 
-const reminderCheckbox = document.querySelector("#calendar-reminder");
-const reminderContainer = document.querySelector("#reminder-date");
+const checkbox = document.getElementById("calendar-reminder");
+const reminderLabel = document.getElementById("reminder-date");
 
-reminderCheckbox.addEventListener("change", () => {
-    reminderContainer.hidden = !reminderCheckbox.checked;
+checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+        reminderLabel.classList.remove("hidden");
+    } else {
+        reminderLabel.classList.add("hidden");
+    }
 });
 const saveButton = document.querySelector("#save-goal");
 
