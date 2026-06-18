@@ -7,7 +7,7 @@ import {
   initializeGoogleAuth,
   signInGoogle,
   createCalendarEvent,
-} from "./googleCalendar.js";
+} from "./GoogleCalendar.js";
 
 window.addEventListener("load", () => {
   initializeGoogleAuth();
