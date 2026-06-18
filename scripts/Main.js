@@ -7,6 +7,7 @@ import {
   initializeGoogleAuth,
   signInGoogle,
   createCalendarEvent,
+  getAccessToken,
 } from "./GoogleCalendar.js";
 
 window.addEventListener("load", () => {
@@ -78,8 +79,12 @@ saveButton.addEventListener("click", async () => {
     const goals = JSON.parse(localStorage.getItem("goals")) || [];
 
     goals.push(goal);
-
-    localStorage.setItem("goals", JSON.stringify(goals));
+    const token = getAccessToken();
+    
+        if (token) {
+            localStorage.setItem("goals", JSON.stringify(goals));
+        }
+    
 
     console.log(goal);
     await createCalendarEvent(goal);
